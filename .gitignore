@@ -1,3 +1,8 @@
 .ipynb_checkpoints/
 PhysicsLabsEnv
 .vscode
+*.aux
+*.fls
+*.log
+*.synctex.*
+*.fdb_latexmk

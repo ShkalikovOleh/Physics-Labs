@@ -79,7 +79,7 @@
     $\omega_{res}$ та максимальної амплітуди струму $I_{0_{max}}(\omega_{res})$ в контурі.
 
     $$ \frac{dI_0}{d\omega} = 
-    \frac{1}{2} \frac{2 \varepsilon_0 \left( L \omega- - \frac{1}{\omega C} \right) \left( L + \frac{1}{C \omega^2} \right)}
+    -\frac{1}{2} \frac{2 \varepsilon_0 \left( L \omega- - \frac{1}{\omega C} \right) \left( L + \frac{1}{C \omega^2} \right)}
     { \left(R^2 + \left( L \omega - \frac{1}{\omega C} \right)^2 \right)^{\frac{3}{2}} }$$
     $$ \frac{dI_0}{d\omega} = 0 \Rightarrow \left( L \omega - \frac{1}{\omega C} \right) = 0 \Rightarrow 
     \omega_{res} = \frac{1}{\sqrt{LC}} = \Omega_0 $$
@@ -136,15 +136,15 @@
     Визначити, наскільки відсотків $\omega_{res}^{'}$ відрізняється від власної частоти контура $\Omega_0$.
     
     $$ \frac{d \varepsilon_C}{d\omega} = \frac{I_0^{'} \omega C - C I_0}{(\omega C)^2} = 
-    \frac{\frac{\varepsilon_0 \left( L \omega - \frac{1}{\omega C} \right) \left( L + \frac{1}{C \omega^2} \right) \left( \omega C  \right)}
+    \frac{-\frac{\varepsilon_0 \left( L \omega - \frac{1}{\omega C} \right) \left( L + \frac{1}{C \omega^2} \right) \left( \omega C  \right)}
     { \left(R^2 + \left( L \omega - \frac{1}{\omega C} \right)^2 \right)^{\frac{3}{2}} } - \frac{C \varepsilon_0}{\sqrt{R^2 + \left( L \omega - \frac{1}{\omega C} \right)}} } {\left( \omega C \right)^2} = $$
     
-    $$ \frac{\varepsilon_0 \left( L \omega - \frac{1}{\omega C} \right) \left( L + \frac{1}{C \omega^2} \right) \left( \omega C  \right) - C \varepsilon_0 \left(R^2 + \left( L \omega - \frac{1}{\omega C} \right)^2 \right) }
+    $$ - \frac{\varepsilon_0 \left( L \omega - \frac{1}{\omega C} \right) \left( L + \frac{1}{C \omega^2} \right) \left( \omega C  \right) + C \varepsilon_0 \left(R^2 + \left( L \omega - \frac{1}{\omega C} \right)^2 \right) }
     {\left( \omega C \right)^2 \left(R^2 + \left( L \omega - \frac{1}{\omega C} \right)^2 \right)^{\frac{3}{2}}} $$
     
     $$ \frac{d \varepsilon_C}{d\omega} = 0 \Rightarrow 
-    \left( L \omega - \frac{1}{\omega C} \right) \left( L \omega + \frac{1}{\omega C} \right) -
-    R^2 - \left( L \omega - \frac{1}{\omega C} \right)^2 = $$ 
+    \left( L \omega - \frac{1}{\omega C} \right) \left( L \omega + \frac{1}{\omega C} \right) +
+    R^2 + \left( L \omega - \frac{1}{\omega C} \right)^2 = $$ 
     $$ L^2 \omega^2 - \frac{1}{\omega^2 C^2} + R^2 + L^2 \omega^2 - \frac{2L}{C} + \frac{1}{\omega^2 C^2} =
     2 L^2 \omega^2 + R^2 - \frac{2L}{C} = 0 $$ 
     
