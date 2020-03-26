@@ -23,8 +23,8 @@
 
 \includegraphics[width=1.0\textwidth]{graphics/RLC.png}
 На малюнках зображено коливальний $RLC$ контур, для якого відомі:
-власна колова частота $\Omega_0 = (LC)^{-1/2} = 235.7(c^{-1})$ за відсутності опору;
-опір $R = 2$(Ом); критичний опір $R_{crit} = 9,4$(Ом). 
+власна колова частота $\Omega_0 = (LC)^{-1/2} = 235.7 \times 10^3(c^{-1})$ за відсутності опору;
+опір $R = 2$(Ом); критичний опір $R_{crit} = 9.4$(Ом). 
 Генератор створює змінну напругу $\varepsilon  = \varepsilon_0 \cos{2\pi \nu t}$
 з фіксованою амплітудою $\varepsilon_0 = 1$(В) та регульованою частотою $\nu = 30$(кГц). 
 В подальшому позначимо $\omega \equiv 2 \pi \nu$.
@@ -79,8 +79,8 @@
     $\omega_{res}$ та максимальної амплітуди струму $I_{0_{max}}(\omega_{res})$ в контурі.
 
     $$ \frac{dI_0}{d\omega} = 
-    -\frac{1}{2} \frac{2 \varepsilon_0 \left( L \omega- - \frac{1}{\omega C} \right) \left( L + \frac{1}{C \omega^2} \right)}
-    { \left(R^2 + \left( L \omega - \frac{1}{\omega C} \right)^2 \right)^{\frac{3}{2}} }$$
+    -\frac{2 \varepsilon_0 \left( L \omega - \frac{1}{\omega C} \right) \left( L + \frac{1}{C \omega^2} \right)}
+    { 2\left(R^2 + \left( L \omega - \frac{1}{\omega C} \right)^2 \right)^{\frac{3}{2}} }$$
     $$ \frac{dI_0}{d\omega} = 0 \Rightarrow \left( L \omega - \frac{1}{\omega C} \right) = 0 \Rightarrow 
     \omega_{res} = \frac{1}{\sqrt{LC}} = \Omega_0 $$
     $$ I_o(\omega_{res}) = \frac{\varepsilon_0}{R} = 0.5 (A)$$
@@ -146,12 +146,14 @@
     \left( L \omega - \frac{1}{\omega C} \right) \left( L \omega + \frac{1}{\omega C} \right) +
     R^2 + \left( L \omega - \frac{1}{\omega C} \right)^2 = $$ 
     $$ L^2 \omega^2 - \frac{1}{\omega^2 C^2} + R^2 + L^2 \omega^2 - \frac{2L}{C} + \frac{1}{\omega^2 C^2} =
-    2 L^2 \omega^2 + R^2 - \frac{2L}{C} = 0 $$ 
+    2 L^2 \omega^2 + R^2 - \frac{2L}{C} = 0 $$
     
     $$ \Rightarrow \omega^2 = \Omega_0^2 - 2\gamma^2 \Rightarrow \omega_{res} = \sqrt{\Omega_0^2 - 2\gamma^2} $$
     
     Таким чином:
-    $$ \omega_{res} \simeq 225\times10^3(c^{-1}),\; \varepsilon_{C_{max}}(\omega_{res}^{'}) = 2.4(B)$$
+    $$ \omega_{res} \simeq 225\times10^3(c^{-1}),\; 
+    \varepsilon_{C_{max}}(\omega_{res}^{'}) = 2.4(B), \;
+    \eta \simeq 4.6\% $$
 
     \item Побудувати амплітудну характеристику напруги на конденсаторі $\varepsilon_C = \varepsilon_C(\omega)$.
     
@@ -161,7 +163,7 @@
     Знайти відносну похибку отриманого значення.
 
     З графіку визначимо $\Delta \omega^{'} = 105 \times 10^3(c^{-1})$, тоді:
-    $$ Q_*^{'} = \frac{\Omega_0}{\Delta \omega^{'}} \simeq 2.4 ,\; \eta = 2.4\%$$
+    $$ Q_*^{'} = \frac{\omega_{res}^{'}}{\Delta \omega^{'}} \simeq 2.4 ,\; \eta = 2.3\%$$
 
 
 \end{enumerate}
