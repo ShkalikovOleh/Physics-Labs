@@ -4,6 +4,72 @@
 
 \vspace{1mm}
 
+У результаті виконання роботи, були отримані наступні дослідні дані($L$(см) - відстань до лазера),
+$x$ - координата відповідного максимуму
+
+\begin{table}[h!]
+    \centering
+    \begin{tabular}{|c|c|c|c|}
+        \hline
+        \textbf{Градка} & \textbf{n} & \textbf{L(см)} & \textbf{x(см)} \\        
+        \hline
+        \multirow{6}{*}{1} & 1 & \multirow{6}{*}{66.5} & 1.1 \\
+        \cline{2-2} \cline{4-4}
+         & 2 &  & 2.2 \\
+        \cline{2-2} \cline{4-4}
+         & 3 &  & 3.3 \\
+        \cline{2-2} \cline{4-4}
+        & 4 &  & 4.3 \\
+        \cline{2-2} \cline{4-4}
+        & 5 &  & 5.4 \\
+        \cline{2-2} \cline{4-4}
+        & 6 &  & 6.5 \\
+        \hline
+
+        
+        \multirow{2}{*}{2} & 1 & \multirow{2}{*}{21.2} & 3.7 \\        
+        \cline{2-2} \cline{4-4}
+        & 2 &  & 3.8 \\
+        \hline
+    \end{tabular}
+
+    \caption{Дослідні дані}
+\end{table}
+
+З формули \ref{eq:10} визначимо період градки:
+
+$$ d = \frac{n \lambda}{\sin{\varphi_n}} = \frac{n \lambda}{\sin{\arctan{\frac{x_n}{L}}}} $$
+
+Знаючи значення $\lambda = 632*10^{-9}$(м) отримаємо наступні значення періоду градки:
+
+\begin{table}
+    \centering
+    \begin{tabular}{|c|c|c|c|c|}
+        \hline
+        \textbf{Градка} & \textbf{n} & $\sin{\varphi}$ & $d$\textbf{(мкм)} & $\langle d \rangle$\textbf{(мкм)} \\        
+        \hline
+        \multirow{6}{*}{1} & 1 & 0.017  & 0.38 & \multirow{6}{*}{0,385} \\
+        \cline{2-4}
+         & 2 & 0.033 & 0.38  & \\         	                                        
+        \cline{2-4}
+        & 3 & 0.05 & 0.38 &\\
+        \cline{2-4}
+        & 4 & 0.064 & 0.39 &\\
+        \cline{2-4}
+        & 5 & 0.081 & 0.39 &\\
+        \cline{2-4}
+        & 6 & 0.081 & 0.39 &\\
+        \hline
+
+        \multirow{2}{*}{2} & 1 & 0.172 & 0.04 & \multirow{2}{*}{0,054} \\        
+        \cline{2-4}
+        & 2 & 0.176 & 0.07  &\\
+        \hline
+    \end{tabular}
+
+    \caption{Результати обчислень}
+\end{table}
+
 %\begin{figure}[h]    
 %    \centering
 %    \includegraphics[width=.7\textwidth]{assets/filename }
