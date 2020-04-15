@@ -4,11 +4,14 @@
 
 \vspace{1mm}
 
+У результаті проведених експериментів 
+були отримані наступні дослідні дані:
+
 \begin{table}[h]
     \centering
     \begin{tabular}{|c|c|c|c|}
         \hline
-        \textbf{Фільтр} & \textbf{Кільце} & \textbf{$R_{світ}$} & \textbf{$R_{тем}$} \\
+        \textbf{Фільтр} & \textbf{Кільце} & \textbf{$r_{світ}$($10^{-5}$м)} & \textbf{$r_{тем}$($10^{-5}$м)} \\
 
         \hline
         \multirow{5}{*}{червоний} & 1 & 1 & 1.07 \\
@@ -62,9 +65,86 @@
     \caption{Дослідні дані}
 \end{table}
 
+З формул \ref{eq:4} і \ref{eq:5} бачимо, що значення радіуса 
+кривизни $R$ та товщини зазору в місці контакту $d_0$ можна знайти 
+розв'язав задачу лінійної регресіі, а саме, якщо $r^2 = k m + b$, то
 
-%\begin{figure}[h]    
-%    \centering
-%    \includegraphics[width=.7\textwidth]{assets/filename }
-%    \caption{Підпис}
-%\end{figure}
+$$ R = \frac{k}{\lambda} $$
+$$ d_0 = - \frac{b_{тем}}{2R} = - \frac{b_{світ}}{2R} - \frac{\lambda}{4} $$
+
+Діаметр плями, що утворилася міє лінзою та скляною поверхней, з елементарних
+геометричних міркувань(теорема Піфагора) можна образувати наступним чином:
+
+$$ D = 2 \sqrt{R^2 - (R-d_0)^2} = 2 \sqrt{2R|d_0| - d_0^2} $$
+
+Отже, обрахуємо $R$, як середнє значення результатів для світлих і темних 
+кілець. Результати містяться у таблиці 3(усі величини у мкм) Графіки отриманих залежносетй наведені нижче(рис. 2, рис. 3).
+
+\begin{table}[h]
+    \centering
+    \begin{tabular}{|c|c|c|c|c|c|c|c|c|c|c|c|c|}
+        \hline
+        \textbf{Фільтр} & \textbf{$R_{тем}$} & \textbf{$R_{світ}$} & \textbf{$R$} &
+        \textbf{$d_{0_{тем}}$} & \textbf{$d_{0_{світ}}$} & \textbf{$d_0$} & \textbf{$D$} \\
+        \hline
+
+        червоний & 56.59 & 57.33 & 56.96 & -0.67 & -0.68 & -0.68 & 17.49 \\
+        \hline
+        
+        помаранчевий & 50.1 & 54.25 & 52.17 & -0.95 & -0.81 & -0.88 & 19.05 \\
+        \hline
+        
+        зелений & 57.9 & 55.18 & 55.04 & -0.71 & -0.7 & -0.7 & 17.52 \\
+        \hline
+
+        синій & 64.75 & 68.14 & 66.45 & -0.72 & -0.67 & -0.7 & 19.18 \\
+        \hline
+
+    \end{tabular}
+    \caption{Результати обчислень}
+\end{table}
+
+
+
+\begin{figure}[h!]    
+    \centering
+    \includegraphics[width=0.7\textwidth]{assets/r_dark(m).pdf}
+    \caption{Графіки залежностей квадрату радіуса темних кілець від номера}
+\end{figure}
+\begin{figure}[h!]
+    \centering
+    \includegraphics[width=0.7\textwidth]{assets/r_light(m).pdf}
+    \caption{Графіки залежностей квадрату радіуса світлих кілець від номера}
+\end{figure}
+
+\pagebreak
+Обчислимо абсолютні похибки за наступними формулами:
+
+$$ \Delta R = $$
+$$ \Delta D = $$
+
+Покладаючи $\Delta r = 10^{-6}$, отримуємо наступні значення похибок.
+
+\begin{table}[h!]
+    \centering
+    \begin{tabular}{|c|c|c|c|c|c|c|}
+        \hline
+        \textbf{Фільтр} & \textbf{$\Delta R$} & \textbf{$\Delta D$} &
+        \textbf{$\varepsilon_R$} & \textbf{$\varepsilon_D$} \\
+        \hline
+
+        червоний &  & & &  \\
+        \hline
+        
+        помаранчевий &  & &  &  \\
+        \hline
+        
+        зелений & &  & &  \\
+        \hline
+
+        синій & &  & & \\
+        \hline
+
+    \end{tabular}
+    \caption{Абсолютні та відносні похибки}
+\end{table}
