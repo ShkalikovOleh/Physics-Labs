@@ -40,34 +40,69 @@ $x$ - координата відповідного максимуму
 
 $$ d = \frac{n \lambda}{\sin{\varphi_n}} = \frac{n \lambda}{\sin{\arctan{\frac{x_n}{L}}}} $$
 
-Знаючи значення $\lambda = 632*10^{-9}$(м) отримаємо наступні значення періоду градки:
+Знаючи значення $\lambda = 632*10^{-9}$(м) отримаємо наступні значення \; періоду 
+градки(таблиця 2)
 
-\begin{table}
+\begin{table}[h]
     \centering
     \begin{tabular}{|c|c|c|c|c|}
         \hline
         \textbf{Градка} & \textbf{n} & $\sin{\varphi}$ & $d$\textbf{(мкм)} & $\langle d \rangle$\textbf{(мкм)} \\        
         \hline
-        \multirow{6}{*}{1} & 1 & 0.017  & 0.38 & \multirow{6}{*}{0,385} \\
+        \multirow{6}{*}{1} & 1 & 0.017  & 38 & \multirow{6}{*}{38.5} \\
         \cline{2-4}
-         & 2 & 0.033 & 0.38  & \\         	                                        
+         & 2 & 0.033 & 38  & \\         	                                        
         \cline{2-4}
-        & 3 & 0.05 & 0.38 &\\
+        & 3 & 0.05 & 38 &\\
         \cline{2-4}
-        & 4 & 0.064 & 0.39 &\\
+        & 4 & 0.064 & 39 &\\
         \cline{2-4}
-        & 5 & 0.081 & 0.39 &\\
+        & 5 & 0.081 & 39 &\\
         \cline{2-4}
-        & 6 & 0.081 & 0.39 &\\
+        & 6 & 0.097 & 39 &\\
         \hline
 
-        \multirow{2}{*}{2} & 1 & 0.172 & 0.04 & \multirow{2}{*}{0,054} \\        
+        \multirow{2}{*}{2} & 1 & 0.172 & 4 & \multirow{2}{*}{5.5} \\        
         \cline{2-4}
-        & 2 & 0.176 & 0.07  &\\
+        & 2 & 0.176 & 7  &\\
         \hline
     \end{tabular}
 
     \caption{Результати обчислень}
+\end{table}
+
+Похибки вимірювань обчислимо як стандартне відхилення
+середнього арифметичного:
+
+$$ \Delta d = |\langle d \rangle - d_i| $$
+$$ \Delta \langle d \rangle = \sqrt{\frac{\sum\limits_{i}^{n} {\Delta d_i}^2}{n(n-1)}} $$
+
+\begin{table}[h]
+    \centering
+    \begin{tabular}{|c|c|c|c|c|}
+        \hline
+        \textbf{Градка} & \textbf{n} & $\Delta d$\textbf{(мкм)} & $\Delta \langle d \rangle$\textbf{(мкм)} & $\varepsilon_{\langle D \rangle}\% $ \\        
+        \hline
+        \multirow{6}{*}{1} & 1 & 0.44  & \multirow{6}{*}{0.17} & \multirow{6}{*}{0.44} \\
+        \cline{2-3} 
+         & 2 & 0.42 &   & \\         	                                        
+         \cline{2-3} 
+        & 3 & 0.39 &  &\\
+        \cline{2-3} 
+        & 4 & 0.52 &  &\\
+        \cline{2-3} 
+        & 5 & 0.39 &  &\\
+        \cline{2-3} 
+        & 6 & 0.33 &  &\\
+        \hline
+
+        \multirow{2}{*}{2} & 1 & 1.4 & \multirow{2}{*}{1.23} & \multirow{2}{*}{22} \\
+        \cline{2-3} 
+        & 2 & 1.6 &   &\\
+        \hline
+    \end{tabular}
+
+    \caption{Похибки}
 \end{table}
 
 %\begin{figure}[h]    
