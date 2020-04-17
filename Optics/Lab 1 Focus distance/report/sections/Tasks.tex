@@ -1,0 +1,72 @@
+\begin{center}
+    \Large{\textbf{Практична частина}}
+\end{center}
+
+\vspace{1mm}
+
+У результаті проведених експериментів 
+були отримані наступні дослідні дані(відстані відносно початку рейки):
+\begin{table}[h] \label{table:raw}
+    \centering
+    \begin{tabular}{ |c|c|c| }
+        \hline 
+        \textbf{Відстань до екрана(см)} & \textbf{Відстань до лінзи(см)} & \textbf{Відстань до предмета(см)} \\
+        \hline
+        102.3 & 43.8 & \multirow{4}{*}{15} \\
+        \cline{1-2}
+        62.4 & 23.6 & \\
+        \cline{1-2}
+        36.0 & 20.6 & \\
+        \cline{1-2}
+        44.7 & 22.2 & \\
+        \hline
+    \end{tabular}
+    \caption{Дослідні дані}
+\end{table}
+
+
+Обрахуємо відстані до лінзи за наступними формулами:
+$$ g = s_l - s_o $$
+$$ b = s_s - s_l $$
+,де $s_l$ - відстань до лінзи від початку рейки,
+$s_s$ - відстань до екрана від початку рейки,
+$s_o$ - відстань до предмета від початку рейки.
+
+Згідно формули \ref{eq:1} тонкої збиральної лінзи 
+та формули \ref{eq:2} для коефіцієнта збільшення лінзи обрахуємо
+зазначені величини. 
+
+Обрахуємо відносні похибки($\delta_f, \delta_V$), для цього абсолютні похибки вимірювань обчислимо за наступними формулами ($\Delta b = \Delta g = 0.1$(см))
+$$ \Delta f = \sqrt{ \left( \frac{\partial{f}}{ \partial{g} } \Delta g \right)^2 +
+\left( \frac{\partial{f}}{ \partial{b} } \Delta b \right)^2 } = 
+\sqrt{ \frac{b^4 {\Delta g}^2}{ (b+g)^4 } + \frac{g^4 {\Delta b}^2}{ (b+g)^4 } } $$
+
+$$ \Delta V = \sqrt{ \left( \frac{\partial{V}}{ \partial{g} } \Delta g \right)^2 +
+\left( \frac{\partial{V}}{ \partial{b} } \Delta b \right)^2 } =
+\sqrt{ \frac{b^2 {\Delta g}^2}{ g^4 } + \frac{{\Delta b}^2}{ g^2 } } $$
+
+Результати обрахунків наведені у таблиці нижче:
+
+\begin{table}[h] \label{table:fV}
+    \centering
+    \begin{tabular}{ |c|c|c|c|c|c|c|c| }
+        \hline 
+        $g$ \textbf{(cм)} & $b$ \textbf{(cм)} & $f$ \textbf{(cм)} & $V$ & $\Delta f$ \textbf{(см)} & $\Delta V$ & $\delta_f$\% & $\delta_V$\% \\
+        \hline
+        28.8 & 58.5 & 19.3 & 2.03 & 0.046 & 0.008 & 0.24 & 0.39 \\
+        \hline
+        8.6 & 38.8 & 7.04 & 4.51 & 0.067 & 0.054 & 0.95 & 1.19 \\
+        \hline
+        5.6 & 15.4 & 4.11 & 2.75 & 0.054 & 0.052 & 1.32 & 1.9 \\
+        \hline
+        7.2 & 22.5 & 5.45 & 3.125 & 0.058 & 0.045 & 1.58 & 1.46 \\
+        \hline
+    \end{tabular}
+    \caption{Результати обрахунків}
+\end{table}
+
+%\begin{figure}[h]    
+%    \centering
+%    \includegraphics[width=.7\textwidth]{assets/filename }
+%    \caption{Підпис}
+%\end{figure}
